@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gale History Museum Exhibits</title>
+<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Top Bar -->
+<div class="topbar">
+  <div class="brand">Gale History Museum</div>
+  <button class="menu-btn" id="menuBtn">☰</button>
+</div>
+
+<!-- Drawer Menu -->
+<div class="drawer-overlay" id="overlay"></div>
+
+<nav class="drawer" id="drawer">
+  <h2>Menu</h2>
+  <a href="0_index.html">Home</a>
+  <a href="exhibits.html">Exhibits</a>
+  <a href="7_temporary.html">Temporary Exhibit</a>
+  <a href="01_welcome.html">About</a>
+</nav>
+
+<div class="container">
+  <div class="pad"></div>
+  <h1>Walkthrough the Museum</h1>
+
+  <!-- Info Card 1 -->
+  <div class="grid">
+
+    <a href="2_stone.html" class="card exhibit-card">Stone Tools</a>
+    <a href="3_kellyville.html" class="card exhibit-card">Kellyville Items</a>
+    <a href="5_ww1.html" class="card exhibit-card">WW1 Story</a>
+
+    <a href="4_migration.html" class="card exhibit-card">Migration</a>
+    <a href="6_indegenous.html" class="card exhibit-card">Indigenous</a>
+    <a href="7_temporary.html" class="card exhibit-card">Temporary</a>
+
+    <a href="8_egypt.html" class="card exhibit-card">Egypt & West Asia</a>
+    <a href="9_map.html" class="card exhibit-card">World Map</a>
+    <a href="10_amphore.html" class="card exhibit-card">Amphora</a>
+
+    <a href="11_papyri.html" class="card exhibit-card">Papyri</a>
+    <a href="12_doorjab.html" class="card exhibit-card">Door Jamb</a>
+    <a href="13_greek.html" class="card exhibit-card">Greek Pottery</a>
+
+    <a href="14_coin.html" class="card exhibit-card">Coins</a>
+    <a href="15_glass.html" class="card exhibit-card">Ancient Glass</a>
+
+  </div>
+
+	<script>
+    const menuBtn = document.getElementById("menuBtn");
+    const drawer = document.getElementById("drawer");
+    const overlay = document.getElementById("overlay");
+
+    function openMenu() {
+      drawer.classList.add("open");
+      overlay.classList.add("open");
+    }
+
+    function closeMenu() {
+      drawer.classList.remove("open");
+      overlay.classList.remove("open");
+    }
+
+    menuBtn.addEventListener("click", openMenu);
+    overlay.addEventListener("click", closeMenu);
+  </script>
+
+</div>
+</body>
+</html>
