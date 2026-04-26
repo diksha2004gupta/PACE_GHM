@@ -5,35 +5,53 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gale History Museum</title>
 <link href="styles.css" rel="stylesheet">
-<script src="jquery-4.0.0.min.js"></script>
-<script>
 
-</script>
 </head>
 <body>
-<div class="container">
-  <h1>Gale History Museum</h1>
-  <p>Tap an NFC point in the museum to begin your journey</p>
+<div class="page">
+    <div class="topbar">
+      <div class="brand">Gale History Museum</div>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
 
-  <div class="nav">
-    <a href="welcome.html">1. Welcome (Entrance)</a>
-    <a href="stone.html">2. Stone Tools</a>
-    <a href="kellyville.html">3. Everyday Items (Kellyville)</a>
-    <a href="ww1.html">4. WW1 Story</a>
-    <a href="migration.html">5. Migration</a>
-    <a href="indigenous.html">6. Indigenous Collection</a>
-    <a href="temporary.html">7. Temporary Exhibit</a>
-    <a href="egypt.html">8. Egypt & West Asia</a>
-    <a href="map.html">9. Map of the World</a>
-    <a href="amphore.html">10. Amphora</a>
-    <a href="papyri.html">11. Papyri</a>
-    <a href="doorjamb.html">12. Door Jamb</a>
-    <a href="greek.html">13. Greek Pottery</a>
-    <a href="coins.html">14. Coins</a>
-    <a href="glass.html">15. Ancient Glass</a>
-    <a href="thankyou.html">16. Thank You</a>
+    <main class="hero">
+      <div class="hero-content">
+        <h1>Explore the Gale History Museum</h1>
+        <p>Tap an NFC point as you move through the museum to hear the story of each exhibit.</p>
+
+        <div class="hero-actions">
+          <a href="01_welcome.html">Start at Entrance</a>
+          <a href="exhibits.html">Browse Exhibits</a>
+        </div>
+      </div>
+    </main>
+
+    <div class="drawer-overlay" id="overlay"></div>
+
+    <nav class="drawer" id="drawer" aria-label="Main menu">
+      <h2>Menu</h2>
+      <a href="exhibits.html">Exhibits</a>
+      <a href="7_temporary.html">Temporary Exhibit</a>
+      <a href="01_welcome.html">About</a>
+    </nav>
   </div>
-</div>
-	
+	<script>
+    const menuBtn = document.getElementById("menuBtn");
+    const drawer = document.getElementById("drawer");
+    const overlay = document.getElementById("overlay");
+
+    function openMenu() {
+      drawer.classList.add("open");
+      overlay.classList.add("open");
+    }
+
+    function closeMenu() {
+      drawer.classList.remove("open");
+      overlay.classList.remove("open");
+    }
+
+    menuBtn.addEventListener("click", openMenu);
+    overlay.addEventListener("click", closeMenu);
+  </script>
 </body>
 </html>
