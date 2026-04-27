@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gale History Museum Migration</title>
+  <title>Gale History Museum WW1</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <script></script>
 </head>
 
 <body>
-
-  <!-- Top Bar -->
+<!-- Top Bar -->
 <div class="topbar">
   <div class="brand">Gale History Museum</div>
   <button class="menu-btn" id="menuBtn">☰</button>
 </div>
 
 <!-- Drawer Menu -->
-<div class="drawer-overlay" id="overlay"></div> 
+<div class="drawer-overlay" id="overlay"></div>
 
 <nav class="drawer" id="drawer">
   <h2>Menu</h2>
@@ -27,37 +27,36 @@
 
 <!--exhib content-->
 <div class="container">
-  <p class="location">📍 You are here: Migration Exhibit</p>
+  <p class="location">📍 You are here: WW1 Exhibit</p>
 
-  <h1>Migration</h1>
+  <h1>A story from WW1</h1>
 
   <!-- Info Card 1 -->
   <div class="card card-info">
-    <div class="card-label">Migration</div>
+    <div class="card-label">WW1 Story</div>
     <p>
-     Objects that speak to migration often hint at cultural
-    identity and show how diversity of cultures enriches our communities.
-  </p>
-</div>
-
-<!-- Ibi Card -->
-<div class="card card-ibi">
-    <div class="card-label">🐦 Ibi the Ibis</div>
-    <p>
-      Learning a new language in a new country is brave! This little
-      book crossed oceans. Every scrawled note in the margins is someone
-      trying to belong. I find that rather moving.
+      This WWI belt belonged to Hedley Hilton Smith and bears badges commemorating
+      fallen comrades. This object tells a story of loss and remembrance.
     </p>
-  </div>
+    </div>
 
-<!-- Navigation -->
+    <!-- Ibi Card -->
+    <div class="card card-ibi">
+      <div class="card-label">🐦 Ibi the Ibis</div>
+      <p>
+        "A belt might seem like a small thing, but look at those badges. Each one is a name.
+        A face. A friend who didn't come home. Objects like this carry grief in ways words sometimes can't."
+      </p>
+    </div>
+
+    <!-- Navigation -->
   <div class="nav">
-    <a href="PREVIOUS.html">← Back</a>
-    <a href="NEXT.html">Next →</a>
+    <a href="3_exhibits.html">← Back</a>
+    <a href="5_migration.html">Next →</a>
   </div>
 </div>
 
-<script>
+<script> // Remains the same across all pages.
     const menuBtn = document.getElementById("menuBtn");
     const drawer = document.getElementById("drawer");
     const overlay = document.getElementById("overlay");
@@ -75,6 +74,6 @@
     menuBtn.addEventListener("click", openMenu);
     overlay.addEventListener("click", closeMenu);
   </script>
-  
+
 </body>
 </html>
