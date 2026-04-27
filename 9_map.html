@@ -1,26 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PAGE TITLE</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gale History Museum Map</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+<!-- Top Bar-->
+ <div class="topbar">
+  <div class="brand">Gale History Museum</div>
+  <button class="menu-btn" id="menuBtn">☰</button>
+ </div>
 
+ <!-- Drawer Menu-->
+  <div class="drawer-overlay" id="overlay"></div>
+<nav class="drawer" id="drawer">
+  <h2>Menu</h2>
+  <a href="index.html">Home</a>
+  <a href="001_exhibits.html">Exhibits</a>
+  <a href="7_temporary.html">Temporary Exhibit</a>
+  <a href="01_welcome.html">About</a>
+</nav>
+
+<!-- exhib content-->
 <div class="container">
-  <p class="location">📍 You are here: LOCATION</p>
 
-  <h1>PAGE TITLE</h1>
+  <p class="location">📍 You are here: World Map</p>
 
-  <p>
-    CONTENT HERE
+  <h1>Map of the World</h1>
+
+  <!-- Info Card 1-->
+  <div class="card card-info">
+    <div class="card-label">World Map</div>
+<p>
+    This map helps you visualise the global reach of the Gale History Museum's collections 
+    — from ancient Greece and Rome to Egypt, West Asia and beyond.
   </p>
+  </div>
 
+  <!-- Ibi Card-->
+   <div class="card card-ibi">
+    <div class="card-label">🐦 Ibi the Ibis</div>
+    <p>
+      “Every object in this museum came from somewhere on this map. Take a moment and trace the journeys — 
+      from ancient civilisations to the shores of Australia. It's all connected."
+    </p>
+   </div>
+
+  <!-- Navigation -->
   <div class="nav">
-    <a href="PREVIOUS.html">← Back</a>
-    <a href="NEXT.html">Next →</a>
+    <a href="8_egypt.html">← Back</a>
+    <a href="10_amphore.html">Next →</a>
   </div>
 </div>
+
+<script>
+    const menuBtn = document.getElementById("menuBtn");
+    const drawer = document.getElementById("drawer");
+    const overlay = document.getElementById("overlay");
+
+    function openMenu() {
+      drawer.classList.add("open");
+      overlay.classList.add("open");
+    }
+
+    function closeMenu() {
+      drawer.classList.remove("open");
+      overlay.classList.remove("open");
+    }
+
+    menuBtn.addEventListener("click", openMenu);
+    overlay.addEventListener("click", closeMenu);
+  </script>
+
 
 </body>
 </html>
