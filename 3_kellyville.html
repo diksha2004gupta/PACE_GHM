@@ -1,92 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name-="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gale History Museum Kellyville</title>
-<link rel="stylesheet" href="styles.css">
-<script></script>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name-="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gale History Museum Kellyville</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script></script>
+  </head>
 
-<body>
-  <!-- Top Bar -->
-<div class="topbar">
-  <div class="brand">Gale History Museum</div>
-  <button class="menu-btn" id="menuBtn">☰</button>
-</div>
+  <body>
+    <!-- Top Bar -->
+    <div class="topbar">
+      <div class="brand">Gale History Museum</div>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
 
-<!-- Drawer Menu -->
-<div class="drawer-overlay" id="overlay"></div>
+    <!-- Drawer Menu -->
+    <div class="drawer-overlay" id="overlay"></div>
 
-<nav class="drawer" id="drawer">
-  <h2>Menu</h2>
-  <a href="index.html">Home</a>
-  <a href="001_exhibits.html">Exhibits</a>
-  <a href="7_temporary.html">Temporary Exhibit</a>
-  <a href="01_welcome.html">About</a>
-</nav>
+    <nav class="drawer" id="drawer">
+      <h2>Menu</h2>
+      <a href="index.html">Home</a>
+      <a href="001_exhibits.html">Exhibits</a>
+      <a href="7_temporary.html">Temporary Exhibit</a>
+      <a href="01_welcome.html">About</a>
+    </nav>
 
-<!--exhib content-->
-<div class="container">
-  <p class="location">📍 You are here: Kellyville Excavation Exhibit</p>
+    <!--exhib content-->
+    <div class="container">
+      <p class="location">📍 You are here: Kellyville Excavation Exhibit</p>
 
-  <h1>Everyday Life in Kellyville</h1>
+      <h1>Everyday Life in Kellyville</h1>
 
-  <!-- Info Card 1 -->
-  <div class="card card-info">
-    <div class="card-label">Kellyville Excavation</div>
-    <p>
-      This exhibit showcases artifacts from the Kellyville excavation, revealing insights into the daily lives of 19th-century travelers and residents.
-    </p>
-  <p>
-    These objects were uncovered during the excavation of the White Hart Inn in Kellyville 
-    as part of the Sydney Metro Northwest expansion in 2016.
-  </p>
+      <!-- Info Card 1 -->
+      <div class="card card-info">
+        <div class="card-label">Kellyville Excavation</div>
+        <p>
+          This exhibit showcases artifacts from the Kellyville excavation,
+          revealing insights into the daily lives of 19th-century travelers and
+          residents.
+        </p>
+        <p>
+          These objects were uncovered during the excavation of the White Hart
+          Inn in Kellyville as part of the Sydney Metro Northwest expansion in
+          2016.
+        </p>
 
-  <p>
-    Bottles, pipes, toys, and ceramics offer a glimpse into 19th-century travel 
-    and social life.
-  </p>
+        <p>
+          Bottles, pipes, toys, and ceramics offer a glimpse into 19th-century
+          travel and social life.
+        </p>
 
-  <p>
-    These everyday items help us understand how people lived, travelled, and connected.
-  </p>
-  </div>
+        <p>
+          These everyday items help us understand how people lived, travelled,
+          and connected.
+        </p>
+      </div>
 
-  <!-- Ibi Card -->
-<div class="card card-ibi">
-    <div class="card-label">🐦 Ibi the Ibis</div>
-    <p>
-      "Bottles, pipes, toys, ceramics — the stuff people left behind tells you everything. I once found a chip in a bin that told me more than most textbooks. History is everywhere, if you look closely enough."
-    </p>
-  </div>
-</div>
+      <!-- Ibi Card -->
+      <div class="card card-ibi">
+        <div class="card-label">🐦 Ibi the Ibis</div>
+        <p>
+          "Bottles, pipes, toys, ceramics — the stuff people left behind tells
+          you everything. I once found a chip in a bin that told me more than
+          most textbooks. History is everywhere, if you look closely enough."
+        </p>
+      </div>
+    </div>
 
-  <!-- Navigation -->
-  <div class="nav">
-    <a href="2_stone.html">← Back</a>
-    <a href="4_ww1.html">Next →</a>
-  </div>
+    <!-- Navigation -->
+    <div class="nav">
+      <a href="2_stone.html">← Back</a>
+      <a href="4_ww1.html">Next →</a>
+    </div>
 
-<script>
-    const menuBtn = document.getElementById("menuBtn");
-    const drawer = document.getElementById("drawer");
-    const overlay = document.getElementById("overlay");
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const drawer = document.getElementById("drawer");
+      const overlay = document.getElementById("overlay");
 
-    function openMenu() {
-      drawer.classList.add("open");
-      overlay.classList.add("open");
-    }
+      function openMenu() {
+        drawer.classList.add("open");
+        overlay.classList.add("open");
+      }
 
-    function closeMenu() {
-      drawer.classList.remove("open");
-      overlay.classList.remove("open");
-    }
+      function closeMenu() {
+        drawer.classList.remove("open");
+        overlay.classList.remove("open");
+      }
 
-    menuBtn.addEventListener("click", openMenu);
-    overlay.addEventListener("click", closeMenu);
-  </script>
-
-
-</body>
+      menuBtn.addEventListener("click", openMenu);
+      overlay.addEventListener("click", closeMenu);
+    </script>
+  </body>
 </html>
