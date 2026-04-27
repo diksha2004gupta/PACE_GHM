@@ -167,17 +167,16 @@ a {
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   align-items: flex-end;
   background:
     linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)),
-    url("hero.jpg") center/cover no-repeat;
+    url("homepage-img/index-image-02.jpg") center center / cover no-repeat;
   padding: 24px 16px;
   box-sizing: border-box;
 }
 
-/* Replace hero.jpg with your actual image file */
 .hero-content {
   width: 100%;
   max-width: 520px;
@@ -318,5 +317,11 @@ a {
 @media (max-width: 360px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: 60% center;
   }
 }
