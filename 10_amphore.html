@@ -1,86 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Gale History Museum Amphore</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <title>Gale History Museum Amphore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <!-- Top Bar-->
-   <div class="topbar">
-    <div class="brand">Gale History Museum</div>
-  <button class="menu-btn" id="menuBtn">☰</button>
-   </div>
+  <body>
+    <!-- Top Bar -->
+    <div class="topbar">
+      <div class="brand">Gale History Museum</div>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
 
-   <!-- Drawer Menu --> <!--this remains the same across all pages-->
-<div class="drawer-overlay" id="overlay"></div>
 
-<nav class="drawer" id="drawer">
-  <h2>Menu</h2><!-- this remains the same across all pages -->
-  <a href="index.html">Home</a>
-  <a href="001_exhibits.html">Exhibits</a>
-  <a href="7_temporary.html">Temporary Exhibit</a>
-  <a href="01_welcome.html">About</a>
-</nav>
+  <!-- Drawer Menu -->
+  <div class="drawer-overlay" id="overlay"></div>
 
-<!-- Exhib content-->
+  <nav class="drawer" id="drawer">
+    <h2>Menu</h2>
+    <a href="index.html">Home</a>
+    <a href="001_exhibits.html">Exhibits</a>
+    <a href="7_temporary.html">Temporary Exhibit</a>
+    <a href="01_welcome.html">About</a>
+  </nav>
+
+<!-- exhibit content -->
 <div class="container">
+  <p class="location">📍 You are here: Amphore Exhibit</p>
+
+  <h1>Amphore</h1>
+
+  <!-- Warning Card -->
+   <div class="warning-banner">
+    <strong> ⚠️ Warning: </strong> Please do not touch any exhibits.
+    <p> Please enjoy the exhibits with your eyes only and avoid touching, to help us preserve them for everyone. </p>
+   </div>
   
-  <p class="location">📍 You are here: The Amphore Wall</p>
 
-  <h1>The Ancient Amphorae</h1>
-<!-- Info Card 1-->
- <div class="card card-info">
-  <div class="card-label">Ancient Amphorae</div>
-
-<!-- Warning Card- Putting it inside the info card sec.-->
- <div class="card card-warning">
-  <p>
-    <div class="card-label">Warning!</div>
-    Please do not touch the amphorae! They are very old and delicate and the natural oils from our skin can damage them.
-  </p>
- </div>
-<p>
-    Amphorae were the essential storage and transport vessels of the ancient world, used to carry wine,
-     olive oil, and grain across the Mediterranean.
-  </p>
- </div>
-
-  <!-- Ibi Card -->
-  <div class="card card-ibi"> <!-- need to change Ibi's comment for each page (get from Mid-Sem W2 table) -->
-    <div class="card-label">🐦 Ibi the Ibis</div>
+  <!-- Info Card 1 -->
+  <div class="card card-info">
+    <div class="card-label">Amphore</div>
     <p>
-    "These were the shipping containers of the ancient world — used to transport wine, oil, and grain across the Mediterranean. Please don't touch them though. 
-    They've already survived two thousand years; let's not push our luck."
-</p>
+      Add text here...
+    </p>
   </div>
 
-<!-- Navigation-->
-  <div class="nav">
-    <a href="9_map.html">← Back</a>
-    <a href="11_papyri.html">Next →</a>
-  </div>
-</div>
+      <!-- Ibi Card -->
+      <div class="card card-ibi">
+        <div class="card-label">🐦 Ibi the Ibis</div>
+        <p>
+          "These were the shipping containers of the ancient world - used to
+          transport wine, oil, and grain across the Mediterranean. Please don't
+          touch them though. They've already survived two thousand years; let's
+          not push our luck."
+        </p>
+      </div>
 
-<script> // Remains the same across all pages.
-    const menuBtn = document.getElementById("menuBtn");
-    const drawer = document.getElementById("drawer");
-    const overlay = document.getElementById("overlay");
+      <!-- Navigation -->
+      <div class="nav">
+        <a href="9_map.html">← Back</a>
+        <a href="11_papyri.html">Next →</a>
+      </div>
+    </div>
 
-    function openMenu() {
-      drawer.classList.add("open");
-      overlay.classList.add("open");
-    }
+    <script>
+      const menuBtn = document.getElementById("menuBtn");
+      const drawer = document.getElementById("drawer");
+      const overlay = document.getElementById("overlay");
 
-    function closeMenu() {
-      drawer.classList.remove("open");
-      overlay.classList.remove("open");
-    }
+      function openMenu() {
+        drawer.classList.add("open");
+        overlay.classList.add("open");
+      }
 
-    menuBtn.addEventListener("click", openMenu);
-    overlay.addEventListener("click", closeMenu);
-  </script>
+      function closeMenu() {
+        drawer.classList.remove("open");
+        overlay.classList.remove("open");
+      }
 
-</body>
+      menuBtn.addEventListener("click", openMenu);
+      overlay.addEventListener("click", closeMenu);
+    </script>
+  </body>
 </html>

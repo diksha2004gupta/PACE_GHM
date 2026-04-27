@@ -296,6 +296,23 @@ a {
 .exhibit-card:active {
   transform: scale(0.97);
 }
+/* Warning card */
+.warning-banner {
+  background: #fff4f4;
+  border-left: 4px solid #e74c3c;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 14px 0;
+  color: #8a1f11;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.warning-banner strong {
+  display: inline-block;
+  margin-right: 6px;
+  font-weight: 600;
+}
 
 /* Responsive fallback (smaller phones) */
 @media (max-width: 360px) {
