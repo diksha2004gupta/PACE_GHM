@@ -31,17 +31,53 @@
     <div class="container">
       <p class="location">📍 You are here: Ancient Coins</p>
 
-        <h1>Ancient Coins</h1>
+      <h1>Ancient Coins</h1>
       <!-- Info Card 1-->
-<div class="card card-info">
-  <div class="card-label"> The Ancient Coin Collection</div>
-</div>
-      <p>CONTENT HERE</p>
-
-      <div class="nav">
-        <a href="PREVIOUS.html">← Back</a>
-        <a href="NEXT.html">Next →</a>
+      <div class="card card-info">
+        <div class="card-label">The Ancient Coin Collection</div>
+        <p>
+          This collection of ancient coins belongs to the Australian Centre for
+          Ancient Numismatic Studies. Many come from Greek colonial cities in
+          the South of Italy.
+          <i>Open the drawers below to explore more coins.</i>
+        </p>
       </div>
+
+      <!-- Ibi card-->
+      <div class="card card-ibi">
+        <div class="card-label">🐦 Ibi the Ibis</div>
+        <p>
+          "Money hasn't changed that much, has it? These coins jangled in the
+          pockets of merchants in ancient Greek colonies in southern Italy. Open
+          the drawers beneath — there's more to discover in there."
+        </p>
+      </div>
+
+      <!--Navigation-->
+      <div class="nav">
+        <a href="13_greek.html">← Back</a>
+        <a href="15_glass.html">Next →</a>
+      </div>
+
+      <script>
+        // Remains the same across all pages.
+        const menuBtn = document.getElementById("menuBtn");
+        const drawer = document.getElementById("drawer");
+        const overlay = document.getElementById("overlay");
+
+        function openMenu() {
+          drawer.classList.add("open");
+          overlay.classList.add("open");
+        }
+
+        function closeMenu() {
+          drawer.classList.remove("open");
+          overlay.classList.remove("open");
+        }
+
+        menuBtn.addEventListener("click", openMenu);
+        overlay.addEventListener("click", closeMenu);
+      </script>
     </div>
   </body>
 </html>
