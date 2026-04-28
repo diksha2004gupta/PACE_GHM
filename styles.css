@@ -313,6 +313,14 @@ a {
   font-weight: 600;
 }
 
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: block;
+}
+
 /* Responsive fallback (smaller phones) */
 @media (max-width: 360px) {
   .grid {
