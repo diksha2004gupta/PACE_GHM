@@ -1,103 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gale History Museum Welcome</title>
-<link href="styles.css" rel="stylesheet">
-<script src="jquery-4.0.0.min.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gale History Museum Welcome</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="jquery-4.0.0.min.js"></script>
+  </head>
 
-<body>
-  <!-- Top Bar -->
-<div class="topbar">
-  <div class="brand">Gale History Museum</div>
-  <button class="menu-btn" id="menuBtn">☰</button>
-</div>
+  <body>
+    <!-- Top Bar -->
+    <div class="topbar">
+      <div class="brand">Gale History Museum</div>
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
 
-<!-- Drawer Menu -->
-<div class="drawer-overlay" id="overlay"></div>
+    <!-- Drawer Menu -->
+    <div class="drawer-overlay" id="overlay"></div>
 
-<nav class="drawer" id="drawer">
-  <h2>Menu</h2>
-  <a href="index.html">Home</a>
-  <a href="001_exhibits.html">Exhibits</a>
-  <a href="7_temporary.html">Temporary Exhibit</a>
-  <a href="01_welcome.html">About</a>
-</nav>
+    <nav class="drawer" id="drawer">
+      <h2>Menu</h2>
+      <a href="index.html">Home</a>
+      <a href="001_exhibits.html">Exhibits</a>
+      <a href="7_temporary.html">Temporary Exhibit</a>
+      <a href="01_welcome.html">About</a>
+    </nav>
 
-<div class="container">
+    <div class="container">
+      <p class="location">📍 You are here — Entrance</p>
 
-  <p class="location">📍 You are here — Entrance</p>
+      <h1>Welcome to the Gale History Museum</h1>
 
-  <h1>Welcome to the Gale History Museum</h1>
+      <!-- Info Card 1 -->
+      <div class="card card-info">
+        <div class="card-label">Acknowledgement of Country</div>
+        <p>
+          We acknowledge the Traditional Custodians of the land on which
+          Macquarie University stands – the Wallumattagal Clan of the Dharug
+          Nation – whose cultures and customs have nurtured, and continue to
+          nurture, this land since time immemorial.
+        </p>
+        <p>We pay our respects to Elders past and present.</p>
+      </div>
 
-  <!-- Info Card 1 -->
-  <div class="card card-info">
-    <div class="card-label">Acknowledgement of Country</div>
-    <p>
-      We acknowledge the Traditional Custodians of the land on which Macquarie University stands – 
-      the Wallumattagal Clan of the Dharug Nation – whose cultures and customs have nurtured, 
-      and continue to nurture, this land since time immemorial. 
-    </p>
-    <p>
-      We pay our respects to Elders past and present.
-    </p>
-  </div>
+      <!-- Warning Card -->
+      <div class="warning-banner">
+        <p>
+          Aboriginal and Torres Strait Islander visitors are advised that the
+          museum contains images of, and artefacts that belonged to, deceased
+          persons.
+          <!-- <div class="card-label">Visitor Notice</div> -->
+        </p>
+      </div>
 
-  <!-- Warning Card -->
-  <div class="card card-warning">
-    <p>
-      Aboriginal and Torres Strait Islander visitors are advised that the museum contains images 
-      of, and artefacts that belonged to, deceased persons.
-      <!-- <div class="card-label">Visitor Notice</div> -->
-    </p>
-  </div>
+      <!-- Info Card 2 -->
+      <div class="card card-info">
+        <!-- <div class="card-label">About the Museum</div> -->
+        <p>
+          Opened in 2021 as part of Macquarie University’s Arts Precinct, the
+          museum’s origins date back to 1973.
+        </p>
+        <p>
+          Two earlier museums—the Museum of Ancient Cultures and the Australian
+          History Museum— merged in 2020 before being renamed in 2025 to honour
+          Drs Janet and Bill Gale.
+        </p>
+      </div>
 
-  <!-- Info Card 2 -->
-  <div class="card card-info">
-    <!-- <div class="card-label">About the Museum</div> -->
-    <p>
-      Opened in 2021 as part of Macquarie University’s Arts Precinct, the museum’s origins date 
-      back to 1973.
-    </p>
-    <p>
-      Two earlier museums—the Museum of Ancient Cultures and the Australian History Museum—
-      merged in 2020 before being renamed in 2025 to honour Drs Janet and Bill Gale.
-    </p>
-  </div>
+      <!-- Ibi Card -->
+      <div class="card card-ibi">
+        <div class="card-label">🐦 Ibi the Ibis</div>
+        <p>
+          G’day! I’m Ibi, your feathered museum guide. Tap each NFC point as you
+          walk through the museum and I’ll tell you what I know.
+        </p>
+        <p>
+          Trust me — I’ve been poking around this campus longer than most
+          professors!
+        </p>
+      </div>
 
-  <!-- Ibi Card -->
-  <div class="card card-ibi">
-    <div class="card-label">🐦 Ibi the Ibis</div>
-    <p>
-      G’day! I’m Ibi, your feathered museum guide. Tap each NFC point as you walk through 
-      the museum and I’ll tell you what I know.
-    </p>
-    <p>
-      Trust me — I’ve been poking around this campus longer than most professors!
-    </p>
-  </div>
+      <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const drawer = document.getElementById("drawer");
+        const overlay = document.getElementById("overlay");
 
-	<script>
-    const menuBtn = document.getElementById("menuBtn");
-    const drawer = document.getElementById("drawer");
-    const overlay = document.getElementById("overlay");
+        function openMenu() {
+          drawer.classList.add("open");
+          overlay.classList.add("open");
+        }
 
-    function openMenu() {
-      drawer.classList.add("open");
-      overlay.classList.add("open");
-    }
+        function closeMenu() {
+          drawer.classList.remove("open");
+          overlay.classList.remove("open");
+        }
 
-    function closeMenu() {
-      drawer.classList.remove("open");
-      overlay.classList.remove("open");
-    }
-
-    menuBtn.addEventListener("click", openMenu);
-    overlay.addEventListener("click", closeMenu);
-  </script>
-
-</div>
-</body>
+        menuBtn.addEventListener("click", openMenu);
+        overlay.addEventListener("click", closeMenu);
+      </script>
+    </div>
+  </body>
 </html>
